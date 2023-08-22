@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta charset="UTF-8" />
+  <meta content='yes' name='apple-mobile-web-app-capable' />
+  <meta content='yes' name='mobile-web-app-capable' />
+  <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+  <meta name="theme-color" content="black">
+  <link rel="app-touch-icon" href="assets/logos/icon-192x192-apple.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pagina de Perfil</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h1>Perfil Pessoal</h1>
+
+
+<img class="redimensionar" src="assets/logos/euzinha.jpg" alt="Imagem Redimensionada">
+
+
+<div class="container">
+    <div class="header">
+      <div class="name">Melyssa S. de Brito </div>
+      <div class="info">Idade: 17 Anos</div>
+      <div class="info">Nacionalidade: Brasileira</div>
+      <div class="info">Localização: Brasil</div>
+      <div class="info">Telefone: (19) 98812-7571</div>
+      <div class="info">Email: melsilve0112@gmail</div>
+    </div><br><br>
+
+
+
+    <div class="section-title">Educação:</div>
+    <div class="experience-item">
+      <div class="experience-title">Cursando - E.E. Alice Antenor de Souza</div>
+      <div>Conclusão: Dezembro 2023</div><br>
+      <div class="experience-title">Cursando - Tecnico de Informatica para Internet</div>
+      <div>Conclusão: Dezembro 2023</div>
+    </div><br><br>
+    
+
+
+<div class="section-title">Habilidades:</div>
+<div>Boa cozinheira, Boa com crianças, Paciente, ... </div><br><br>
+
+
+
+
+<div class="section-title">Descrição:</div>
+<div>Uma pessoa alegre que gosta de ler, cozinhar, cartar e dançar, mas apenas quando está sozinha por ter vergonha e as vezes ser timida</div><br><br>
+
+
+
+
+<div class="section-title interests-title">Interesses</div>
+    <ul class="interests-list">
+      <li>Leitura</li>
+      <li>Cozinhar</li>
+      <li>Dançar</li>
+
+    </ul>
+
+
+
+</div>
+</body>
+<script>
+
+  document.addEventListener("DOWContentLoaded", function (event) {
+          if ('serviceWorker' in navigator) {
+              console.log('has serviceworker');
+              window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('serviceWorker.js')
+                       .then((registration) => {
+                          console.log('Service worker registered.',
+                          registration);
+                       });
+              });
+          }
+          else {
+              console.log("Your browser not support serviceWorkers");
+          }
+      });
+  
+  </script>
+</html>
